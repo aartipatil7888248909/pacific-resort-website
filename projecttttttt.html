@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pacific Trails Resort :: Activities</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="pacific.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pacific Trails Resort, a place where you can enjoy nature in luxury and engage in fun activities.">
+    <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+<style>
+<body>
+header,
+main,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+    display: block;
+}
+
+body {
+    background-color: #4F6D93;
+    background-image: linear-gradient(#ffffff, #90c7e3);
+    color: #4F6D93;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header {
+    background-color: #000033;
+    color: #FFFFFF;
+    background-image: url(images/sunset.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+nav {
+    font-weight: bold;
+    padding: 20px;
+    float: left;
+    width: 160px;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 3s linear;
+}
+
+nav ul {
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+    list-style-type: none;
+}
+
+nav a:link {
+    color: #000033;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #FFFFFF
+}
+
+h1 {
+    margin-bottom: 0;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    margin-top: 0;
+}
+
+h2 {
+    color: #3399CC;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    text-shadow: 1px 1px 1px #cccccc;
+}
+
+h3 {
+    color: #000033;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.resort {
+    color: #5C7FA3;
+}
+
+main ul {
+    list-style-image: url(images/marker.gif);
+}
+
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 20px;
+    margin-left: 190px;
+    background: #FFFFFF;
+    float: none;
+}
+
+.resort {
+    font-weight: bold;
+}
+
+#contact {
+    font-size: 90%;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background: #90C7E3;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333
+}
+
+main {
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: block;
+    background: #FFFFFF;
+    margin-left: 190px;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(images/coasthero.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url(images/yurthero.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url(images/trailhero.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+table {
+    border: 1px solid #3399cc;
+    width: 80%;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 5px;
+    border: 1px solid #3399cc;
+}
+
+td {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(even) {
+    background-color: #f5fafc;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 9px;
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    margin-left: 130px;
+}
+
+#gallery {
+    position: relative;
+    height: 200px;
+    text-align: left;
+}
+
+#gallery ul {
+    list-style-type: none;
+    width: 300px;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#gallery img {
+    border-style: none;
+}
+
+#gallery a {
+    text-decoration: none;
+    font-style: italic;
+    color: #eaeaea;
+    color: black;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    top: 16px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+}
+
+figure {
+    position: absolute;
+    left: 280px;
+    text-align: center;
+    opacity: .2;
+}
+
+
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+    }
+    main {
+        margin-left: 0;
+    }
+    nav {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: 0.5em;
+    }
+    nav li {
+        display: inline;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+    }
+    #homehero,
+    #yurthero,
+    #trailhero {
+        margin-left: 0;
+        height: 200px;
+    }
+    footer {
+        margin-left: 0
+    }
+}
+
+
+    header {
+        padding-top: 1em;
+    }
+    main {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 90%
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    nav {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        border-bottom: 2px solid #330000;
+    }
+    nav a {
+        display: block;
+    }
+    #homehero,
+    #yurthero,
+    #trailhero {
+        background-image: none;
+        height: 0;
+    }
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display: none;
+    }
+    label {
+        float: none;
+        text-align: left;
+    }
+    input[type="submit"] {
+        margin-left: 0;
+    }
+    #gallery {
+        display: none;
+    }
+}
+</style>
+
+    <div id="wrapper">
+        <header>
+            <h1> Pacific Trails Resort</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="yurts.html">Yurts</a> </li>
+                <li><a href="activities.html">Activities</a> </li>
+                <li><a href="reservations.html">Reservations  </a></li>
+            </ul>
+        </nav>
+        <div id="trailhero"> </div>
+        <main>
+            <h2> Activities at Pacific Trails </h2>
+
+
+            <h3>Hiking</h3>
+
+            <p>Pacific Trails Resort has 5 miles of hiking trails and is adjacent to a state park. Go it alone or join one of our guided hikes.</p>
+
+            <h3>Kayaking</h3>
+
+            <p>Ocean kayaks are available for guest use.
+            </p>
+
+            <h3>Bird Watching</h3>
+
+            <p>While anytime is a good time for bird watching at Pacific Trails, we offer guided bird watching trips at sunrise several times a week.
+            </p>
+            <div id="gallery">
+                <figure>
+                    <img src="photo2.jpg" width="500" height="500" alt="Rocky Coastline">
+                </figure>
+                <ul>
+
+                    <li>
+                        <a href="photo2.jpg"><img src="photo2thumb.jpg" width="500" height="90" alt="Rocky Coastline">
+                            <span><img src="photo2.jpg" width="500" height="500" alt="Rocky Coastline"><br>Rocky Coastline</span></a>
+                    </li>
+                    <li>
+                        <a href="photo3.jpg"><img src="photo3thumb.jpg" width="500" height="90" alt="Clouds Moving In">
+                            <span><img src="photo3.jpg" width="500" height="500" alt="Clouds Moving In"><br>Clouds Moving In</span></a>
+                    </li>
+                    <li>
+                        <a href="photo4.jpg"><img src="photo4thumb.jpg" width="500" height="90" alt="Waterfall Near Big Sur">
+                            <span><img src="photo4.jpg" width="500" height="500" alt="Waterfall Near Big Sur"><br>Waterfall Near Big Sur</span></a>
+                    </li>
+
+                    <li>
+                        <a href="photo6.jpg"><img src="photo6thumb.jpg" width="500" height="90" alt="Sunset on the Coast">
+                            <span><img src="photo6.jpg" width="200" height="500" alt="Sunset on the Coast"><br>Sunset on the Coast</span></a>
+                    </li>
+                </ul>
+
+
+
+            </div><br>
+
+        </main>
+        <div>
+            <footer>Copyright &copy;&nbsp;2016 &nbsp; Pacific Trails Resort <br/>
+
+                <a href="mailto:bakary.kassama@pacifictrailsresort.com">bakary.kassama@pacifictrailsresort.com</a></footer>
+        </div>
+    </div>
+	<form action="reservation_handler.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="checkin">Check-in Date:</label>
+    <input type="date" id="checkin" name="checkin" required><br>
+    
+    <label for="checkout">Check-out Date:</label>
+    <input type="date" id="checkout" name="checkout" required><br>
+    
+    <label for="rooms">Number of Rooms:</label>
+    <input type="number" id="rooms" name="rooms" min="1" required><br>
+    
+    <label for="extras">Extras:</label>
+    <select id="extras" name="extras">
+        <option value="none">None</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="guided-tour">Guided Tour</option>
+        <!-- Add more options as needed -->
+    </select><br>
+    
+    <input type="submit" value="Submit Reservation">
+</form>
+
+</body>
+
+</html>
